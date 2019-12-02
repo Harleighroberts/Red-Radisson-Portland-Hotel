@@ -1,0 +1,686 @@
+/* Enter your Styles below! */
+.logo{
+	width: 5%;
+	height: 5%;
+	position: absolute;
+	top: 30px;
+	right: 30px;
+}
+h1{
+	font-family: 'Gothic A1', sans-serif;
+	font-weight:600;
+	color: #ffffff;
+	text-transform: uppercase;
+	font-size: 60px;
+	position: relative;
+	text-align: left;
+	top: 200px;
+	left: 180px;
+}
+
+ h3{
+	font-family: 'Gothic A1', sans-serif;
+	font-weight:600;
+	color: #ffffff;
+	text-transform: uppercase;
+	font-size: 40px;
+	text-align: center;
+	position: relative;
+	top: 200px;
+
+}
+
+
+
+	
+
+
+h4 {
+	font-family: 'Gothic A1', sans-serif;
+	font-weight:600;
+	color: #ffffff;
+	text-transform: uppercase;
+	font-size: 30px;
+	text-align: center;
+	position: relative;
+	top: 200px;
+
+	
+	
+}
+
+h5 {
+	font-family: 'Gothic A1', sans-serif;
+	font-weight:600;
+	color: #ffffff;
+	text-transform: uppercase;
+	font-size: 40px;
+	text-align: center;
+	position: relative;
+	top: 200px;
+
+	
+}
+h6 {
+	font-family: 'Gothic A1', sans-serif;
+	font-weight:600;
+	color: #ffffff;
+	text-transform: uppercase;
+	font-size: 40px;
+	text-align: center;
+	position: relative;
+	top: 200px;
+
+	
+}
+
+
+
+
+header {margin-bottom: 20px;}
+
+/* ensures that your images stretch the width of their containers */
+img { width: 100%; }
+
+a { 
+	color: red;
+	text-decoration: none;
+	 }
+a:hover { color: #AB3224; }
+
+footer{
+	display: block;
+	color: #AB3224;
+}
+
+.grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 40px;
+	width: 60%;
+	margin: auto;
+}
+
+.grid div {
+	background-color: #ccc;
+	padding: 20px;
+}
+
+
+/*
+font-family: 'Mansalva', cursive;
+font-family: 'Dosis', sans-serif;
+font-family: 'Indie Flower', cursive;
+*/
+#menuToggle
+{
+  display: block;
+  position: fixed;
+  top: 50px;
+  left: 50px;
+  
+  z-index: 1;
+  
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menuToggle input
+{
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+
+  
+  cursor: pointer;
+  
+  opacity: 0; /* hide this */
+  z-index: 2; /* and place it over the hamburger */
+  
+  -webkit-touch-callout: none;
+}
+
+/*
+ * Just a quick hamburger
+ */
+#menuToggle span
+{
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  
+  background: #ffffff;
+  border-radius: 3px;
+  
+  z-index: 1;
+  
+  transform-origin: 4px 0px;
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+#menuToggle span:first-child
+{
+  transform-origin: 0% 0%;
+
+}
+
+#menuToggle span:nth-last-child(2)
+{
+  transform-origin: 0% 100%;
+
+}
+
+/* 
+ * Transform all the slices of hamburger
+ * into a crossmark.
+ */
+#menuToggle input:checked ~ span
+{
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background:#AB3224;
+
+}
+
+/*
+ * But let's hide the middle one.
+ */
+#menuToggle input:checked ~ span:nth-last-child(3)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+
+}
+
+/*
+ * Ohyeah and the last one should go the other direction
+ */
+#menuToggle input:checked ~ span:nth-last-child(2)
+{
+  transform: rotate(-45deg) translate(0, -1px);
+
+}
+
+/*
+ * Make this absolute positioned
+ * at the top left of the screen
+ */
+#menu
+{
+  position: fixed;
+  width: 300px;
+  margin: -100px 0 0 -50px;
+  padding: 50px;
+  padding-top: 125px;
+  
+  background: #000;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  /* to stop flickering of text in safari */
+  
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+#menu li
+{
+  padding: 10px 0;
+  font-size: 22px;
+  font-family: 'Gothic A1', sans-serif;
+  font-weight:500;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-align: left;
+
+}
+
+#menu li:hover{
+  color: #AB3224;
+
+}
+ 
+
+
+
+/*
+ * And let's slide it in from the left
+ */
+#menuToggle input:checked ~ ul
+{
+  transform: none;
+
+
+}
+/* 3. Style your slideshow */
+
+
+
+
+
+
+.homeimage{
+	height: 100%;
+	width: 100%;
+	position: relative;
+	left: 60px;
+	z-index: -1;
+}
+
+
+
+.slideshow-2 {
+	width: 100%;
+	height: 550px;
+	margin: 20px auto;
+	outline: none;
+
+
+}
+
+
+
+.text-2{  
+	font-family: 'Gothic A1', sans-serif;
+	font-weight:400;
+	color: #ffffff;
+	font-size: 20px;
+	text-align: center;
+	position: relative;
+	top: 200px;
+
+}
+
+body {
+background: #000;
+color:#fff;
+font-family: 'Gothic A1', sans-serif;
+font-weight: 500;
+text-align: center;
+font-size: 62.5%;
+line-height: 150%;
+height: 100%;
+line-height: 1.5;
+}
+
+a { text-decoration: none;}
+
+#wrapper { 
+  width: 100%;
+  overflow: hidden;
+  position: absolute;
+  top: 80%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+
+#btn-outline {
+   margin: 30px auto 0;
+  width: 210px;
+  height: 40px;
+  display: block;
+}
+
+#btn-outline .shape {
+  stroke-dasharray: 100 310;
+  stroke-dashoffset: -304;
+  stroke-width: 5px;
+  fill: transparent;
+  stroke: #fff;
+  -webkit-transition: stroke-width 1s, stroke-dashoffset 1s, stroke-dasharray 1s;
+  -ms-transition: stroke-width 1s, stroke-dashoffset 1s, stroke-dasharray 1s;
+  transition: stroke-width 1s, stroke-dashoffset 1s, stroke-dasharray 1s;
+}
+
+#btn-outline .text { 
+  top: -34px;
+  position: relative;
+  color: #fff;
+  font-size: 1.5em;
+  letter-spacing: 4px;
+  margin-right: -4px;
+}
+
+ #btn-outline:hover .shape {
+   stroke-width: 2px;
+  stroke-dashoffset: 0;
+  stroke-dasharray: 550;
+}
+
+.no-svg #btn-outline {
+   color: #fff;
+  font-size: 1.7em;
+  line-height: 40px;
+  letter-spacing: 4px;
+  text-indent: 4px;
+  border: 2px solid #fff;
+}
+
+
+
+.slideshow-3 {
+	width: 100%;
+	height: 550px;
+	margin: 20px auto;
+	outline: none;	
+}
+
+.text-3{
+	font-family: 'Gothic A1', sans-serif;
+	font-weight:400;
+	color: #ffffff;
+	font-size: 20px;
+	text-align: center;
+	position: relative;
+	top: 200px;
+}
+#wrapper3 { 
+  width: 100%;
+  overflow: hidden;
+  position: absolute;
+  top: 80%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+
+#btn-outline {
+   margin: 30px auto 0;
+  width: 210px;
+  height: 40px;
+  display: block;
+}
+
+#btn-outline .shape {
+  stroke-dasharray: 100 310;
+  stroke-dashoffset: -304;
+  stroke-width: 5px;
+  fill: transparent;
+  stroke: #fff;
+  -webkit-transition: stroke-width 1s, stroke-dashoffset 1s, stroke-dasharray 1s;
+  -ms-transition: stroke-width 1s, stroke-dashoffset 1s, stroke-dasharray 1s;
+  transition: stroke-width 1s, stroke-dashoffset 1s, stroke-dasharray 1s;
+}
+
+#btn-outline .text { 
+  top: -34px;
+  position: relative;
+  color: #fff;
+  font-size: 1.5em;
+  letter-spacing: 4px;
+  margin-right: -4px;
+}
+
+ #btn-outline:hover .shape {
+   stroke-width: 2px;
+  stroke-dashoffset: 0;
+  stroke-dasharray: 550;
+}
+
+.no-svg #btn-outline {
+   color: #fff;
+  font-size: 1.7em;
+  line-height: 40px;
+  letter-spacing: 4px;
+  text-indent: 4px;
+  border: 2px solid #fff;
+}
+
+.slideshow-4 {
+	width: 100%;
+	height: 550px;
+	margin: 20px auto;
+	outline: none;	
+}
+
+.text-4{
+	font-family: 'Gothic A1', sans-serif;
+	font-weight:400;
+	color: #ffffff;
+	font-size: 20px;
+	text-align: center;
+	position: relative;
+	top: 200px;
+}
+
+#wrapper4 { 
+  width: 100%;
+  overflow: hidden;
+  position: absolute;
+  top: 60%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+
+#btn-outline {
+   margin: 30px auto 0;
+  width: 210px;
+  height: 40px;
+  display: block;
+}
+
+#btn-outline .shape {
+  stroke-dasharray: 100 310;
+  stroke-dashoffset: -304;
+  stroke-width: 5px;
+  fill: transparent;
+  stroke: #fff;
+  -webkit-transition: stroke-width 1s, stroke-dashoffset 1s, stroke-dasharray 1s;
+  -ms-transition: stroke-width 1s, stroke-dashoffset 1s, stroke-dasharray 1s;
+  transition: stroke-width 1s, stroke-dashoffset 1s, stroke-dasharray 1s;
+}
+
+#btn-outline .text { 
+  top: -34px;
+  position: relative;
+  color: #fff;
+  font-size: 1.5em;
+  letter-spacing: 4px;
+  margin-right: -4px;
+}
+
+ #btn-outline:hover .shape {
+   stroke-width: 2px;
+  stroke-dashoffset: 0;
+  stroke-dasharray: 550;
+}
+
+.no-svg #btn-outline {
+   color: #fff;
+  font-size: 1.7em;
+  line-height: 40px;
+  letter-spacing: 4px;
+  text-indent: 4px;
+  border: 2px solid #fff;
+}
+
+
+/*BOOK YOUR STAY SUBPAGE*/
+
+
+.logo-subpage{
+	width: 5%;
+	height: 5%;
+	position: absolute;
+	top: 50px;
+	left: 30px;
+}
+/* First, we wrap every single word in a .wordContainer div */
+/* We set that one to hide it's overflow */
+.wordContainer {
+	overflow: hidden;
+}
+
+/* We define the "up" animation */
+@keyframes up {
+	100% {
+		transform: translateY(0%);
+	}
+}
+
+/* Then, every single word gets animated up */
+.word {
+	animation: up 0.8s;
+	animation-delay: 1.2s;
+	animation-fill-mode: forwards;
+	animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+	transform: translateY(115%);
+}
+
+/* Delay for staggering effect */
+.textWrapper .wordContainer:nth-child(2) .word {
+	animation-delay: 1.35s;
+}
+.textWrapper .wordContainer:nth-child(3) .word {
+	animation-delay: 1.5s;
+}
+.textWrapper .wordContainer:nth-child(4) .word {
+	animation-delay: 1.65s;
+}
+
+/* And that's it! */
+
+/* PEN STYLING */
+
+
+.word {
+	width: 100%;
+	height: 100%;
+	font-family: 'Gothic A1', sans-serif;
+	font-weight:600;
+	-webkit-font-smoothing: antialiased;
+	line-height: 65px;
+	overflow: hidden;
+	
+}
+
+.backgroundsubpage {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	z-index: -1;
+	
+}
+.header {
+	width: 100vw;
+	height: 100vh;
+	position: absolute;
+	display: flex;
+	justify-content: left;
+	align-items: left;
+	top: 300px;
+	left: 75px;
+}
+.textWrapper {
+	font-weight: 800;
+	font-size: 66px;
+	color: #fff;
+}
+.wordContainer {
+	float: left;
+}
+.textWrapper .wordContainer:nth-child(3) {
+	clear: both;
+}
+
+.footer{
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   height: 5%;
+   background-color: #ffffff;
+}
+
+a.animated-button:link, a.animated-button:visited {
+	position: relative;
+	display: block;
+	margin: 30px auto 0;
+	padding: 14px 15px;
+	color: #fff;
+	font-size:14px;
+	font-weight: bold;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	overflow: hidden;
+	letter-spacing: .08em;
+	border-radius: 0;
+	text-shadow: 0 0 1px rgba(0, 0, 0, 0.2), 0 1px 0 rgba(0, 0, 0, 0.2);
+	-webkit-transition: all 1s ease;
+	-moz-transition: all 1s ease;
+	-o-transition: all 1s ease;
+	transition: all 1s ease;
+}
+a.animated-button:link:after, a.animated-button:visited:after {
+	content: "";
+	position: absolute;
+	height: 0%;
+	left: 50%;
+	top: 50%;
+	width: 150%;
+	z-index: -1;
+	-webkit-transition: all 0.75s ease 0s;
+	-moz-transition: all 0.75s ease 0s;
+	-o-transition: all 0.75s ease 0s;
+	transition: all 0.75s ease 0s;
+}
+a.animated-button:link:hover, a.animated-button:visited:hover {
+	color: #FFF;
+	text-shadow: none;
+}
+a.animated-button:link:hover:after, a.animated-button:visited:hover:after {
+	height: 450%;
+}
+a.animated-button:link, a.animated-button:visited {
+	position: relative;
+	display: block;
+	margin: 30px auto 0;
+	padding: 14px 15px;
+	color: #fff;
+	font-size:14px;
+	border-radius: 0;
+	font-weight: bold;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	overflow: hidden;
+	letter-spacing: .08em;
+	text-shadow: 0 0 1px rgba(0, 0, 0, 0.2), 0 1px 0 rgba(0, 0, 0, 0.2);
+	-webkit-transition: all 1s ease;
+	-moz-transition: all 1s ease;
+	-o-transition: all 1s ease;
+	transition: all 1s ease;
+}
+
+a.animated-button.victoria-three {
+	border: 2px solid #D24D57;
+}
+a.animated-button.victoria-three:after {
+	background: #D24D57;
+	opacity: .5;
+	-moz-transform: translateX(-50%) translateY(-50%);
+	-ms-transform: translateX(-50%) translateY(-50%);
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	transform: translateX(-50%) translateY(-50%);
+}
+a.animated-button.victoria-three:hover:after {
+	height: 140%;
+	opacity: 1;
+}
+
+
