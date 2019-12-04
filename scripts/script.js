@@ -9,7 +9,11 @@
 
 
 // You can adjust the optional settings to control how square1 works by using code like this instead:
-
+$('.js-toggle-menu').click(function(e){
+  e.preventDefault();
+  $('.mobile-header-nav').slideToggle();
+  $(this).toggleClass('open');
+});
 
 
 

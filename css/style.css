@@ -2,9 +2,18 @@
 .logo{
 	width: 5%;
 	height: 5%;
-	position: absolute;
+	position: fixed;
 	top: 30px;
 	right: 30px;
+	z-index: 99;
+}
+
+.stickyheader{
+	position: fixed;
+	z-index: 1;
+	width: 100%;
+	height: 15%;
+	background-color: #000;
 }
 h1{
 	font-family: 'Gothic A1', sans-serif;
@@ -82,11 +91,7 @@ header {margin-bottom: 20px;}
 /* ensures that your images stretch the width of their containers */
 img { width: 100%; }
 
-a { 
-	color: red;
-	text-decoration: none;
-	 }
-a:hover { color: #AB3224; }
+
 
 footer{
 	display: block;
@@ -268,13 +273,6 @@ font-family: 'Indie Flower', cursive;
 
 
 
-.homeimage{
-	height: 100%;
-	width: 100%;
-	position: relative;
-	left: 60px;
-	z-index: -1;
-}
 
 
 
@@ -568,6 +566,8 @@ a { text-decoration: none;}
 	
 }
 
+
+
 .backgroundsubpage {
 	width: 100%;
 	height: 100%;
@@ -597,90 +597,174 @@ a { text-decoration: none;}
 	clear: both;
 }
 
-.footer{
-   position: fixed;
-   left: 0;
-   bottom: 0;
-   width: 100%;
-   height: 5%;
-   background-color: #ffffff;
+
+.nights{
+	font-size: 22px;
+	font-family: 'Gothic A1', sans-serif;
+	font-weight:600;
+	position: relative;
+	top:200px;
+	left: 605px;
+	color: #000;
 }
 
-a.animated-button:link, a.animated-button:visited {
-	position: relative;
-	display: block;
-	margin: 30px auto 0;
-	padding: 14px 15px;
-	color: #fff;
-	font-size:14px;
-	font-weight: bold;
-	text-align: center;
-	text-decoration: none;
-	text-transform: uppercase;
-	overflow: hidden;
-	letter-spacing: .08em;
-	border-radius: 0;
-	text-shadow: 0 0 1px rgba(0, 0, 0, 0.2), 0 1px 0 rgba(0, 0, 0, 0.2);
-	-webkit-transition: all 1s ease;
-	-moz-transition: all 1s ease;
-	-o-transition: all 1s ease;
-	transition: all 1s ease;
-}
-a.animated-button:link:after, a.animated-button:visited:after {
-	content: "";
-	position: absolute;
-	height: 0%;
-	left: 50%;
-	top: 50%;
-	width: 150%;
-	z-index: -1;
-	-webkit-transition: all 0.75s ease 0s;
-	-moz-transition: all 0.75s ease 0s;
-	-o-transition: all 0.75s ease 0s;
-	transition: all 0.75s ease 0s;
-}
-a.animated-button:link:hover, a.animated-button:visited:hover {
-	color: #FFF;
-	text-shadow: none;
-}
-a.animated-button:link:hover:after, a.animated-button:visited:hover:after {
-	height: 450%;
-}
-a.animated-button:link, a.animated-button:visited {
-	position: relative;
-	display: block;
-	margin: 30px auto 0;
-	padding: 14px 15px;
-	color: #fff;
-	font-size:14px;
-	border-radius: 0;
-	font-weight: bold;
-	text-align: center;
-	text-decoration: none;
-	text-transform: uppercase;
-	overflow: hidden;
-	letter-spacing: .08em;
-	text-shadow: 0 0 1px rgba(0, 0, 0, 0.2), 0 1px 0 rgba(0, 0, 0, 0.2);
-	-webkit-transition: all 1s ease;
-	-moz-transition: all 1s ease;
-	-o-transition: all 1s ease;
-	transition: all 1s ease;
+
+
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: red;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  cursor: pointer;
+
 }
 
-a.animated-button.victoria-three {
-	border: 2px solid #D24D57;
+.button1 {
+  font-family: 'Gothic A1', sans-serif;
+  font-weight:300;
+  background-color: white; 
+  color: black; 
+  border: 2px solid black;
+  position: relative;
+  left: 260px;
+  top: 200px;
 }
-a.animated-button.victoria-three:after {
-	background: #D24D57;
-	opacity: .5;
-	-moz-transform: translateX(-50%) translateY(-50%);
-	-ms-transform: translateX(-50%) translateY(-50%);
-	-webkit-transform: translateX(-50%) translateY(-50%);
-	transform: translateX(-50%) translateY(-50%);
+
+.button1:hover {
+  background-color: black;
+  color: white;
 }
-a.animated-button.victoria-three:hover:after {
-	height: 140%;
-	opacity: 1;
+
+.button2 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid black;
+  position: relative;
+  left: 270px;
+  top: 200px;
 }
+
+.button2:hover {
+  background-color: black;
+  color: white;
+}
+
+.button3 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid black;
+  position: relative;
+  left: 280px;
+  top: 200px;
+}
+
+.button3:hover {
+  background-color: black;
+  color: white;
+}
+
+.button4 {
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+  position: relative;
+  left: 290px;
+  top: 200px;
+}
+
+
+.button4:hover {
+  background-color: black;
+  color: white;
+}
+
+
+
+
+
+
+
+.roomtype{
+	font-size: 22px;
+	font-family: 'Gothic A1', sans-serif;
+	font-weight:600;
+	text-transform: uppercase;
+	position: relative;
+	top:300px;
+	left: 50px;
+	color: #000;
+}
+
+
+
+
+.button5 {
+  font-family: 'Gothic A1', sans-serif;
+  font-weight:300;
+  background-color: #ffffff; 
+  color: #000; 
+  border: 2px solid #000;
+  position: relative;
+  left: 110px;
+  top: 330px;
+
+}
+
+.button5:hover {
+  background-color: black;
+  color: #ffffff;
+}
+
+.button6 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid black;
+  position: relative;
+  left: 120px;
+  top: 330px;
+}
+
+.button6:hover {
+  background-color: black;
+  color: white;
+}
+
+.button7 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid black;
+  position: relative;
+  left: 130px;
+  top: 330px;
+}
+
+.button7:hover {
+  background-color: black;
+  color: white;
+}
+
+.button8 {
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+  position: relative;
+  left: 140px;
+  top: 330px;
+}
+
+
+.button8:hover {
+  background-color: black;
+  color: white;
+}
+
+
 
 
